@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  
+  <title>Civic Mapper</title>
+
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Civicly</title>
+  <link href='/assets/css/style.css' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Civicly</a>
+        <div class="pull-right mylocation" style='line-height:40px'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="inputStuff">
+    <select onChange="changeMap(value); value = value">
+      <option value="SanFrancisco" selected="true">San Francisco</option>
+      <option value="Oakland">Oakland</option>
+      <option value="Berkeley">Berkeley</option>
+    </select>
+  </div> -->
+    
+  <div style=" position:absolute; height:100%; width:100%; top: 40px; margin:auto">
+    <div style='position: absolute; height: 100%; width: 75%' id="map_canvas">
+    </div>
+    <div style='position: absolute; height: 100%; width: 25%; right:0; overflow-y: auto; '>
+      <div id='mini-sidebar'>
+        <form id='search' class='form-search'>
+          <input id='cityname' type="text" class="input-xlarge search-query" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;San Francisco, California&quot;,&quot;Buffalo, New York&quot;,&quot;New York, New York&quot;,&quot;Detroit, Michigan&quot;,&quot;Palo Alto, California&quot;, &quot;Chicago, Illinois&quot;,&quot;Boston, Massachusetts&quot;]" placeholder='Enter the city'>
+        </form>
+        </div>
+      <ul id='sidebar' style='margin-top: 80px'>
+      </ul>
+      <div id="query" class="tweet"></div>
+    </div>
+  </div>
+  <div class="modal hide" id="modal">
+    <button type="button" class="close" data-dismiss="modal" style='margin-right: 10px; margin-top: 5px'>×</button>
+    <div class="modal-header">
+      <h4>Content</h4>
+    </div>
+    <div class='content' style='padding: 20px 10px'></div>
+  </div>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src='/socket.io/socket.io.js'></script>
+  <!-- DEV:START !-->
+  <script src="/assets/js/lib/require.js"></script>
+  <script>
+    var socket = io.connect(window.location.origin);
+    var geocoder = new google.maps.Geocoder;
+    var socket = io.connect(window.location.href);
+    require.config({
+      paths: {
+        "main": "/assets/js/main"
+      }
+    });
+    require(["main"]);
+  </script>
+
+</body>
+</html>

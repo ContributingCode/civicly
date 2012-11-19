@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_list"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:text=""
+        android:paddingRight="8dp"
+        android:textColor="#444444"
+        android:textSize="16dip"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:layout_width="50dip"
+	  	android:layout_height="50dip" />
+
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView2"
+        android:text="+10"
+        android:textColor="#8c1000"
+        android:textSize="16dip" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:paddingTop="6dp"
+        android:text="32 mins ago, "
+        android:textSize="12dip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/imageView2"
+        android:text="San Francisco, CA"
+        android:textSize="12dip" />
+
+</RelativeLayout>

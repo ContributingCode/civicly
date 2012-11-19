@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tileimg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/logoView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/civicly_logo"
+            android:contentDescription="@string/civicly_logo" />
+
+        <Button
+            android:id="@+id/backButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:height="20dp"
+            android:text="Back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/issue"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="hello world"
+            android:textColor="#444444"
+            android:textSize="22dip"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/issue"
+            android:paddingTop="6dp"
+            android:text="32 mins ago, "
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="+10"
+            android:textColor="#8c1000"
+            android:textSize="32dip" />
+
+        <Button
+            android:id="@+id/voteup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView3"
+            android:text="Vote" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:layout_below="@+id/voteup"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/itemLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/voteup"
+            android:layout_alignBottom="@+id/voteup"
+            android:layout_alignParentLeft="true"
+            android:text="San Francisco, CA"
+            android:textSize="12dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

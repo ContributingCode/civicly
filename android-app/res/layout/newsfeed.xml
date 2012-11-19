@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@drawable/tileimg" >
+ 
+ <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/civicly_logo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="10dp"
+     android:contentDescription="Civicly Logo" />
+
+ <Button
+     android:id="@+id/reportBtn"
+     style="?android:attr/buttonStyleSmall"
+     android:height="20dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="10dp"
+     android:text="Report" />
+   
+</RelativeLayout>
+  
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:id="@+id/tabcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#FFF"
+            android:gravity="center_horizontal" >
+        </TabWidget>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:scrollbars="@null" >
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
+    
+
+</LinearLayout>

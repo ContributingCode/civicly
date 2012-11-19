@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_gravity="left"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tabLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/tabSelectedDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:layout_alignParentBottom="true"
+        android:background="#509bbf"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tabDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="#509bbf" />
+
+</RelativeLayout>

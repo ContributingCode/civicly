@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Civicly</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSample</string>
+    <string name="btnIntend">Take (big) Picture</string>
+    <string name="btnIntendS">Take (small) Picture</string>
+    <string name="btnIntendV">Take Video</string>
+    <string name="fb_share">Fb share</string>
+    <string name="Report">Report</string>
+    <string name="tab_1">First</string>
+    <string name="tab_2">Second</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_item_view">ItemView</string>
+    <string name="civicly_logo">Civicly Logo</string>
+
+</resources>
