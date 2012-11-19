@@ -7,7 +7,6 @@ about 'trending issues', which involves organic notification of information to u
 
 It aims to provide users to interact with the community to address an important issue/event in a virtual 'petition signup' style mode. The crucial part is, describe the problem in 140chars (utilizing twitter) to its fullest.
 
-Civicly also aggregates issues/events/kudos posted via its app along with similar 'issues' over existing social networks (including Open 311 APIs)
 
 Download the app, take photos of civic issues that you would like to see addressed, then spread the word!  You can post these photos to our website with links to Twitter and Facebook, calling for social action.  People then vote on the issues and bring public awareness to the issue.
 
@@ -18,7 +17,7 @@ Download the app, take photos of civic issues that you would like to see address
 * Node.js
 * Socket.io
 * Backend powered by Parse
-* API's - Facebook, Twitter, Open 311, Google
+* API's - Facebook, Twitter, Google
 
 ### Architecture ###
 
