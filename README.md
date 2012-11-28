@@ -10,7 +10,7 @@ It aims to provide users to interact with the community to address an important 
 
 Download the app, take photos of civic issues that you would like to see addressed, then spread the word!  You can post these photos to our website with links to Twitter and Facebook, calling for social action.  People then vote on the issues and bring public awareness to the issue.
 
-### [Presentation](http://presvo.com/5c09ec0/)  ###
+### [Presentation](http://presvo.com/0499f8c/)  ###
 
 ### Technology Stack
 * Android App
